@@ -1,17 +1,20 @@
 # Notes
 
 Data_Structures
-    - Data_Structure
-        - Implementation
-        - Notes.md
+    └── Data_Structure
+        ├── Implementation
+        └── Notes.md
 
-Algorithms 
-    - Notes
+Algorithms
+    └── Notes
+
 Data_Structures
-    - BST
-        - BST
-        - Notes.md
+    └── BST
+        ├── BST
+        └── Notes.md
+
 Paradigms
-    - OOP.md
+    └── OOP.md
+
 Design_Patterns
-    - TODO
+    └── TODO
