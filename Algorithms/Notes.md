@@ -1,3 +1,30 @@
+### Common algorithms and their runtimes
+# Nodes & Graph Traversals
+## Depth-First Search (DFS)
+- Description: Explore as far as possible along each branch before backtracking (recursive or explicit stack).
+- Time complexity:
+  - Adjacency list: O(V + E)
+  - Adjacency matrix: O(V^2)
+- Space complexity (auxiliary):
+  - Visited array/set: O(V)
+  - Recursion stack or explicit stack: O(h) (tree height) — worst-case O(V)
+- Notes: For trees, h = O(log n) if balanced, O(n) if skewed. Use iterative DFS to avoid recursion depth limits.
+
+## Breadth-First Search (BFS)
+- Description: Explore neighbors level-by-level using a queue. Useful for shortest paths in unweighted graphs.
+- Time complexity:
+  - Adjacency list: O(V + E)
+  - Adjacency matrix: O(V^2)
+- Space complexity (auxiliary):
+  - Visited array/set: O(V)
+  - Queue: O(width) — worst-case O(V)
+- Notes: BFS finds shortest path in unweighted graphs; store distance/parent arrays if needed.
+
+## Practical notes
+- When answering "space complexity" in interviews, clarify whether you mean auxiliary space (excluding input) or total space (including input storage).
+- Graph representation matters: adjacency lists are preferred for sparse graphs; adjacency matrices for dense graphs.
+
+
 ### Definitions 
 Space complexity: The amount of memory required by an algorithm as a function of the input size (n). For example, if an algorithm pushes all n input elements onto a stack, the space complexity grows linearly — O(n). Constant space (O(1)) means the extra memory used does not grow with n (for example, using a fixed number of variables regardless of input size).
 Variables that I always declare as a part of the algorithm take constant time because they are not influenced by the size of the input.

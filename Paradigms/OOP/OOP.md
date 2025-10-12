@@ -9,7 +9,7 @@ CompileTimeType a = new RuntimeType(...) // LHS: Compile-time type. RHS: Run-tim
 Upcasting (allowed)
 Animal a = new Dog(...)
 This is allowed because the contract of the Superclass is fulfilled by the Subclass, Dog, which contains everything that an animal is plus additional behavior.
-Downclassing (disallowed)
+Downcasting (disallowed)
 Dog d = new Animal(...)
 This is not allowed and may cause a compile-time or run-time error because the contract established by the Subclass Dog may require more than what is provided by the Animal definition.
 
